@@ -53,7 +53,7 @@ gem "bootsnap","1.12.0", require: false
 group :development, :test do
   gem "sqlite3", "1.4.2"
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", "1.5.0", platforms: %i[ mri mingw x64_mingw ]
+  gem "debug",  "1.5.0", platforms: %i[ mri mingw x64_mingw ]
 end
 
 group :development do
@@ -72,4 +72,8 @@ group :test do
   gem "capybara", "3.37.1"
   gem "selenium-webdriver", "4.2.0"
   gem "webdrivers", "5.0.0"
+end
+
+group :production do
+  gem "pg", "1.3.5"
 end
